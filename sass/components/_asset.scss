@@ -1,0 +1,28 @@
+.asset {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    padding-left: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--second-background-color);
+    margin-bottom: 30px;
+  }
+}

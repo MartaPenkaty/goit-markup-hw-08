@@ -1,0 +1,94 @@
+.team {
+  background-color: var(--second-background-color);
+  padding-bottom: 94px;
+
+  &__member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  &__job {
+    padding-top: 10px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    /*padding-bottom: 30px; */
+  }
+
+  &__list {
+    padding-left: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    width: 1170px;
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+    background: var(--second-background-color);
+
+    & > li {
+      background-color: var(--second-color);
+    }
+  }
+
+  &__item > &__image {
+    margin-bottom: 30px;
+    object-fit: cover;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  &--padding {
+    padding-bottom: 30px;
+  }
+
+  &__icons {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background-color: var(--main-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover svg {
+      fill: var(--second-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--color {
+      fill: var(--icon-color);
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.about__list{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 50px;
+}
+.about__list > li {
+  height: 294px;
+}
+.about__item {
+  position: relative;
+}
+.about__subtitle {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--second-color);
+}

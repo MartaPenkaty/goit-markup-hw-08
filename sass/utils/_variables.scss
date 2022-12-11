@@ -1,0 +1,46 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color: #2196f3;
+  --brand-color: #212121;
+  --second-color: #ffffff;
+  --description-color: #757575;
+  --background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --icon-color: #afb1b8;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  color: var(--second-color);
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
