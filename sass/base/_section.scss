@@ -1,13 +1,19 @@
 .section {
-	  padding-top: 94px;
-	  padding-bottom: 94px;
-	
+  padding-top: 60px;
+}
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
+}
+
+/*
 &:first-child {
   padding-bottom: 0;
 }
-}
+
 
 .no-padding-top {
   padding-top: 0px;
-}
+}*/

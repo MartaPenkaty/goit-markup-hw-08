@@ -1,18 +1,19 @@
-.logo {
-  margin-right: 93px;
+.logo--first {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--main-color);
+}
 
-  &--first {
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--main-color);
-  }
-
-  &--second {
-    font-family: var(--secondary-font);
-    color: #000000;
+.logo--second {
+  font-family: var(--secondary-font);
+  color: #000000;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-top {
+    margin-left: 0;
   }
 }

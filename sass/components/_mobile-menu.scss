@@ -1,0 +1,95 @@
+.mobile-menu {
+  &__link {
+    display: block;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    margin-left: 40px;
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      color: var(--main-color);
+    }
+  }
+  &__address {
+    display: block;
+    font-weight: 500;
+  }
+
+  &__tel {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    margin-top: 302px;
+    color: var(--main-color);
+  }
+  &__email {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+    margin: 32px 0 64px 0px;
+  }
+  &__socials {
+    display: inline-flex;
+    flex-direction: row;
+    font-weight: 500;
+
+    &--link {
+      color: var(--main-color);
+
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+    }
+
+    &--bar {
+      padding: 0 10px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 24px;
+  width: 24px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-color: var(--second-color);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container .is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 25px;
+  left: 85%;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    fill: var(--main-color);
+  }
+}
