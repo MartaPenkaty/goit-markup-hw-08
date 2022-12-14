@@ -4,7 +4,7 @@
   &:after {
     content: "";
     height: 4px;
-    background-color: $blue;
+    background-color: var(--main-color);
     position: absolute;
     border-radius: 2px;
     width: 100%;
