@@ -1,9 +1,9 @@
-/*footer {
-  display: flex;
+footer {
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start;*/
   background-color: var(--background-color);
-}*/
+}
 
 .footer {
   padding-top: 60px;
@@ -24,9 +24,7 @@
   }
 
   &__contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+    display: inline-block;
   }
   &__logo {
     color: var(--second-color);
@@ -49,12 +47,13 @@
 
   &__phone,
   &__mail {
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.714;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    font-style: normal;
+    text-align: left;
     text-decoration: none;
+    font-style: normal;
+    opacity: 60%;
     color: rgba(255, 255, 255, 0.6);
     padding-top: 9px;
 
@@ -77,6 +76,7 @@
     color: var(--second-color);
     padding-top: 20px;
     padding-bottom: 9px;
+    text-align: left;
   }
 
   &__icons {
@@ -98,23 +98,6 @@
     }
   }
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-  }
-}
-@media screen and (min-width: 1200px) {
-  
-  .footer {
-    padding-top: 60px;
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: space-between;
-  }
-}
-
 .newsleter {
   background-color: var(--background-color);
 
@@ -123,7 +106,7 @@
     gap: 12px;
   }
   &__email {
-    margin-top: 20px;
+    margin-top: 18px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -131,7 +114,8 @@
     height: 50px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
+    padding: 16px 15px;
+    display: flex;
 
     &:focus {
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,7 +125,6 @@
   }
 
   &__button {
-    margin-top: 20px;
     width: 200px;
     height: 50px;
     text-align: left;
@@ -155,6 +138,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--second-color);
     font-size: 16px;
+    cursor: pointer;
+    margin-top: 18px;
   }
   &__icon {
     position: absolute;
@@ -162,5 +147,32 @@
     fill: var(--second-color);
     height: 24px;
     width: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .container div {
+    text-align: left;
+  }
+  .footer {
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+  }
+  .newsleter {
+    &__button {
+      margin-left: 12px;
+    }
+    &__email {
+      width: 358px;
+    }
   }
 }
