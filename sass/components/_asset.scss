@@ -1,7 +1,7 @@
 .asset {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  gap: 30px;
 
   &__title {
     text-transform: uppercase;
@@ -9,9 +9,19 @@
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px;
-    align-items: center;
+    /*align-items: center;
     justify-content: center;
     display: flex;
+    margin-top: 30px;*/
+  }
+  &__description {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    flex-wrap: wrap;
   }
 
   &__icon {
@@ -25,50 +35,19 @@
     border-radius: 4px;
     max-width: 450px;
     height: 120px;
+    padding-top: 25px;
   }
   &__item {
-    color: #757575;
+    color: var(--description-color);
     line-height: 1.7;
-    max-width: 450px;
     margin-bottom: 30px;
-  }
-}
+    width: 450px;
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .asset {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: flex-start;
-    &__icon {
-      max-width: 354px;
+    @include tablet {
+      width: 354px;
     }
-    &__item {
-      max-width: 354px;
-      margin-bottom: 30px;
-      flex-basis: 48%;
-    }
-    &__title {
-      justify-content: left;
-    }
-  }
-}
-@media screen and (min-width: 1200px) {
-  .asset {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    gap: 30px;
-
-    &__item {
-      max-width: 270px;
-    }
-
-    &__icon {
-      max-width: 270px;
-    }
-    &__title {
-      justify-content: left;
+    @include desktop {
+      width: 270px;
     }
   }
 }

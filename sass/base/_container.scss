@@ -1,7 +1,17 @@
 container {
-  max-width: 100%;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
   padding: 0 15px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
+/*
 header > .container {
   height: 60px;
 }
@@ -18,3 +28,4 @@ header > .container {
     margin: 0 auto;
   }
 }
+*/

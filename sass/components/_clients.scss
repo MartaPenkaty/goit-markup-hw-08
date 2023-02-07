@@ -11,6 +11,7 @@
     width: 1170px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -20,13 +21,24 @@
   &__icon {
     border: 1px solid var(--icon-color);
     border-radius: 4px;
-    width: 170px;
+    width: 100%;
+    max-width: 210px;
     height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
     fill: var(--icon-color);
     cursor: pointer;
+
+    @include tablet {
+      width: 226px;
+      height: 92px;
+    }
+
+    @include desktop {
+      width: 170px;
+      height: 92px;
+    }
 
     &:hover,
     &:focus {
