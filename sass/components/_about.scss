@@ -6,6 +6,7 @@
     &__list {
       display: flex;
       gap: 30px;
+      padding-top: 50px;
     }
 
     &__item {
@@ -38,15 +39,4 @@
     }
   }
 }
-/*
-    
-    &__subtitle {
-      padding-bottom: 27px;
-      align-content: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-  
-*/
+

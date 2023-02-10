@@ -3,19 +3,17 @@
   font-weight: 700;
   text-align: center;
   font-family: var(--main-font);
-  /*padding-top: 94px;*/
+  padding-top: 94px;
   line-height: 1.17;
   padding-bottom: 50px;
 
   &__list {
-    width: 1170px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 94px;
   }
 
   &__icon {

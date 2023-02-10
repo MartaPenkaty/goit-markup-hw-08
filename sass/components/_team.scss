@@ -27,18 +27,24 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    /*padding-bottom: 30px; */
+    max-width: 450px;
+
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 270px;
+    }
   }
 
   &__list {
     padding-left: 0px;
     margin-left: 0px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
-    width: 1170px;
     margin: auto;
     padding-top: 50px;
     justify-content: center;
@@ -49,9 +55,11 @@
     }
   }
 
-  &__item > &__image {
-    margin-bottom: 30px;
+  &__image {
     object-fit: cover;
+    display: block;
+    height: auto;
+    width: 100%;
   }
 
   &__socials {
