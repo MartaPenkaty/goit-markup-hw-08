@@ -1,7 +1,7 @@
 footer {
   background-color: var(--background-color);
   padding-top: 60px;
-  //padding-bottom: 60px;
+  padding-bottom: 60px;
   display: flex;
   align-content: center;
 }
@@ -29,7 +29,6 @@ footer {
 
     @include desktop {
       flex-wrap: nowrap;
-      padding-top: 60px;
     }
   }
 
@@ -37,10 +36,6 @@ footer {
     font-style: inherit;
     display: flex;
     gap: 70px;
-
-    @include desktop {
-      padding-left: 100px;
-    }
   }
 
   &__logo {
@@ -54,8 +49,6 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-color);
-    text-align: center;
-    // padding-top: 72px;
   }
 
   &__socials {
@@ -131,10 +124,9 @@ footer {
     align-content: center;
 
     @include desktop {
-      align-items: flex-start;
       flex-direction: row;
-      //display: inline-flex;
-      //gap: 12px;
+      display: inline-flex;
+      gap: 12px;
     }
   }
   &__email {
