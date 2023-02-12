@@ -1,6 +1,6 @@
 .banner {
-  max-height: 400px;
-  max-width: 100vw;
+  // max-height: 400px;
+  //max-width: 100vw;
   background-color: var(--background-color);
   background-image: linear-gradient(
       to bottom,
@@ -16,6 +16,8 @@
   justify-content: center;
   text-align: center;
   flex-flow: column;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @include tablet {
     background-image: linear-gradient(
@@ -27,7 +29,7 @@
   }
 
   @include desktop {
-    height: 600px;
+    // height: 600px;
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
@@ -35,8 +37,10 @@
       ),
       url(../images/backgroung_image.jpg);
     max-width: 1600px;
-     margin-left:  auto;
+    margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .banner__btn {

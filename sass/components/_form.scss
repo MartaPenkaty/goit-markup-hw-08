@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--second-color);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
@@ -17,6 +17,11 @@
   box-shadow: 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 
   &__close-btn {
     position: absolute;
@@ -40,7 +45,9 @@
     margin-bottom: 12px;
   }
   &__label {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     position: relative;
     color: rgba(117, 117, 117, 1);
     font-size: 12px;
@@ -54,7 +61,7 @@
     border-radius: 4px;
     margin-top: 4px;
     margin-bottom: 4px;
-    padding-left: 42px;
+    //padding-left: 42px;
 
     @include desktop {
       width: 448px;
@@ -122,6 +129,20 @@
   align-items: center;
   justify-content: center;
 
+  &__agree {
+    width: 346px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 1.17;
+
+    @include desktop {
+      width: 395px;
+      height: 24px;
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+
   &__agree a {
     color: var(--main-color);
   }
@@ -135,7 +156,7 @@
   &__check {
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
-    margin-right: 8px;
+    // margin-right: 8px;
   }
   &__span {
     display: flex;
