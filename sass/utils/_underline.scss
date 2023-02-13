@@ -1,6 +1,6 @@
-.underline {
+.navigation__item--active {
   position: relative;
-  
+
   @include tablet {
   }
   @include desktop {

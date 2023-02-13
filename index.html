@@ -8,19 +8,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/main.min.css" />
+  <title>Homework8</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <header class="header">
     <!-- MOBILE MENU                -->
-    <div class="header__menu24px">
+    <div class="header__mobile-menu">
       <button type="menu" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
           class="menu-toggle__btn">
@@ -39,7 +38,8 @@
           </a>
         </div>
         <ul class="navigation__list">
-          <li class="navigation__item underline"><a class="navigation__link" href="index.html">Agencja</a></li>
+          <li class="navigation__item navigation__item--active"><a class="navigation__link"
+              href="index.html">Agencja</a></li>
           <li class="navigation__item"><a class="navigation__link" href="portfolio.html"> Portfolio</a></li>
           <li class="navigation__item">Kontakt</li>
         </ul>
@@ -75,7 +75,7 @@
   <main>
     <div class="banner">
       <div class="container">
-        <h1>EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
+        <h1 class="banner__title">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
         <button class="banner__btn" type="button" data-modal-open>Zamów usługe</button>
         <!-- FORM   -->
         <div class="backdrop is-hidden" data-modal>
@@ -217,7 +217,7 @@
     </section>
     <section class="section team">
       <div class="container">
-        <h2>Nasz zespół</h2>
+        <h2 class="team__title">Nasz zespół</h2>
         <ul class="team__list ">
           <li class="team__item">
             <figure>

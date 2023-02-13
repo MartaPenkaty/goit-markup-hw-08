@@ -58,7 +58,7 @@
   }
 
   &--active {
-    color: black;
+    color: var(--main-color);
   }
 
   &__contacts-link {
@@ -72,7 +72,7 @@
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--description-color);
+    color: var(--main-color);
   }
   &__contacts-link--email {
     font-weight: 500;
@@ -83,8 +83,9 @@
   }
   &__social-media {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding-bottom: 48px;
+    padding-left: 40px;
   }
 
   &__social-media-link {

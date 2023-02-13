@@ -1,7 +1,7 @@
-@use './utils/mixins' as *;
+@use "./utils/mixins" as *;
 @import "./utils/underline";
 @import "./utils/variables";
-@import "./utils/visualy-hidden";
+@import "./utils/rest";
 
 @import "./base/common";
 @import "./base/container";

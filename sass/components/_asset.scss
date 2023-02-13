@@ -4,15 +4,14 @@
   gap: 30px;
 
   &__title {
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    margin-top: 0;
     text-transform: uppercase;
     color: rgba(33, 33, 33, 1);
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px;
-    /*align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 30px;*/
   }
   &__description {
     display: flex;
@@ -40,7 +39,6 @@
   &__item {
     color: var(--description-color);
     line-height: 1.7;
-    margin-bottom: 30px;
     width: 450px;
 
     @include tablet {
